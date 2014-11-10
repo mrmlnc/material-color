@@ -78,7 +78,3 @@ Additional variables for text based on [Material Design Typography](http://www.g
   clr-ui-menu
   clr-ui-button
 ````
-
-
-
-
