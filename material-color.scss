@@ -2,12 +2,12 @@
 //
 // Name:           UI Color Palette
 // Description:    The color palette of material design.
-// Version:        1.0.0
+// Version:        2.0.0
 //
 // Author:         Denis Malinochkin
 // Git:            https://github.com/mrmlnc/material-color
 //
-// twitter:        @mrmlnc
+// twitter:        $mrmlnc
 //
 // ================================================================================
 
@@ -462,21 +462,19 @@ $clr-blue-grey-800:                    nth($list-blue-grey, 9);
 $clr-blue-grey-900:                    nth($list-blue-grey, 10);
 
 
-
 // UI Color Application
 // --------------------------------------------------------------------------------
 
-// Text
-$clr-ui-text:                          $clr-grey-900;
-$clr-ui-hint-text:                     $clr-grey-400;
-$clr-ui-secondary-text:                $clr-grey-600;
-
-// Headline
+// Typography
+$clr-ui-display-4:                     $clr-grey-600;
+$clr-ui-display-3:                     $clr-grey-600;
+$clr-ui-display-2:                     $clr-grey-600;
+$clr-ui-display-1:                     $clr-grey-600;
+$clr-ui-headline:                      $clr-grey-900;
 $clr-ui-title:                         $clr-grey-900;
-$clr-ui-subhead:                       $clr-grey-900;
-
-// Elements
-$clr-ui-dividers:                      $clr-grey-300;
-$clr-ui-icons:                         $clr-grey-600;
+$clr-ui-subhead-1:                     $clr-grey-900;
+$clr-ui-body-2:                        $clr-grey-900;
+$clr-ui-body-1:                        $clr-grey-900;
+$clr-ui-caption:                       $clr-grey-600;
 $clr-ui-menu:                          $clr-grey-900;
 $clr-ui-button:                        $clr-grey-900;

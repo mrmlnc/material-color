@@ -31,7 +31,7 @@ Just import the file, whitch includes variables colors in your project.
 
 **Stylus:**
 
-````STYLUS
+````Stylus
   @import "lib/material-color"
 ````
 
@@ -63,18 +63,17 @@ Just import the file, whitch includes variables colors in your project.
 Additional variables for text based on [Material Design Typography](http://www.google.com/design/spec/style/typography.html).
 
 ````Text
-  // Text
-  clr-ui-text
-  clr-ui-hint-text
-  clr-ui-secondary-text
-
-  // Headline
-  clr-ui-title
-  clr-ui-subhead
-
-  // Elements
-  clr-ui-dividers
-  clr-ui-icons
-  clr-ui-menu
-  clr-ui-button
+// Typography
+clr-ui-display-4
+clr-ui-display-3
+clr-ui-display-2
+clr-ui-display-1
+clr-ui-headline
+clr-ui-title
+clr-ui-subhead-1
+clr-ui-body-2
+clr-ui-body-1
+clr-ui-caption
+clr-ui-menu
+clr-ui-button
 ````
