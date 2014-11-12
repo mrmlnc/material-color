@@ -3,14 +3,10 @@ Material Design Color
 
 The colour palette, based on [Google's Material Design](http://www.google.com/design/spec/style/color.html), for use in your project.
 
-
-
 Support
 --------------
 
 Support for all popular css preprocessors: [Less](http://lesscss.org/), [Sass](http://sass-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
-
-
 
 How to use
 --------------
@@ -26,7 +22,7 @@ Just import the file, whitch includes variables colors in your project.
 **Sass:**
 
 ````Sass
-  @import "lib/material-color";
+  @import "lib/material-color"
 ````
 
 **Stylus:**
