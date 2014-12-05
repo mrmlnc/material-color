@@ -8,6 +8,13 @@ Support
 
 Support for all popular css preprocessors: [Less](http://lesscss.org/), [Sass](http://sass-lang.com/) and [Stylus](http://learnboost.github.io/stylus/).
 
+Installation
+--------------
+
+* Download the files you need from the this repository;
+* Bower: `$ bower install material-color --save`;
+* Git: `$ git clone git://github.com/mrmlnc/material-color.git`;
+
 How to use
 --------------
 
@@ -29,6 +36,12 @@ Just import the file, whitch includes variables colors in your project.
 
 ````Stylus
   @import "lib/material-color"
+````
+
+If you use Bower, the path would be:
+
+````
+  bower_components/material-color/..
 ````
 
 **The build variable:**
