@@ -32,6 +32,45 @@ Just import the file, whitch includes variables colors in your project.
   @import "lib/material-color"
 ````
 
+**Print Feature:**
+If you want to print colors for use in HTML as classes, set `$print-colors` and `$print-list` in the top of `material-color-prefixed.scss` file.
+
+
+SCSS: 
+```SCSS
+//===================== $print-colors =========================\\
+//= @default: true
+//= if you don't want to print selectors, change value to: false
+//==============================================================\\
+$print-colors: true; 
+
+//===================== $print-list ========================\\
+//= you can specify some color levels to print
+//= @default: true -> prints all colors
+//= @type: list -> prints specified levels 
+//==========================================================\\
+$print-list: 500 900; // prints $clr-*, $clr-*-500, $clr-*-900
+
+```
+Compiled to(CSS):
+```CSS
+.c-red-500 { color: #f44336; }
+.bgc-red-500 { background-color: #f44336; }
+.c-red { color: #f44336; }
+.bgc-red { background-color: #f44336; }
+.c-red-900 { color: #b71c1c; }
+.bgc-red-900 { background-color: #b71c1c; }
+
+.c-pink-500 { color: #e91e63; }
+.bgc-pink-500 { background-color: #e91e63; }
+.c-pink { color: #e91e63; }
+.bgc-pink { background-color: #e91e63; }
+.c-pink-900 { color: #880e4f; }
+.bgc-pink-900 { background-color: #880e4f; }
+/* and other colors */
+```
+
+
 **Stylus:**
 
 ````Stylus
