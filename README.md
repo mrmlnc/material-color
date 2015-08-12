@@ -31,8 +31,10 @@ Just import the file, whitch includes variables colors in your project.
 ````Sass
   @import "lib/material-color"
 ````
-If you want to print colors for use in HTML as classes, set `$print-colors` and `$$print-list` in the top of `material-color-prefixed.scss` file.
-example:
+
+**Print Feature:**
+If you want to print colors for use in HTML as classes, set `$print-colors` and `$print-list` in the top of `material-color-prefixed.scss` file.
+
 
 SCSS: 
 ```SCSS
