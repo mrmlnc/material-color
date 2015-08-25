@@ -86,3 +86,18 @@ clr-ui-caption
 clr-ui-menu
 clr-ui-button
 ````
+
+**Looping**
+
+There are provided lists of variables for looping through the colors. Depending on your language, the syntax (for SCSS) would be:
+
+````
+@import "material-color";
+
+@each $clr, $var in $clr-blue-list {
+  .blue.#{$clr} {
+    color: $var;
+  }
+}
+````
+

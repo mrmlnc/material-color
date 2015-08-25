@@ -129,9 +129,23 @@ $clr-red-A200:                         nth($list-red, 12);
 $clr-red-A400:                         nth($list-red, 13);
 $clr-red-A700:                         nth($list-red, 14);
 
-$clr-red-list:   $clr-red, $clr-red-50, $clr-red-100, $clr-red-200, $clr-red-300,
-                 $clr-red-400, $clr-red-500, $clr-red-600, $clr-red-700, $clr-red-800, 
-                 $clr-red-900, $clr-red-A100, $clr-red-A200, $clr-red-A400, $clr-red-A700;
+$clr-red-list: (
+  "base": $clr-red,
+  "50": $clr-red-50, 
+  "100": $clr-red-100, 
+  "200": $clr-red-200, 
+  "300": $clr-red-300,
+  "400": $clr-red-400, 
+  "500": $clr-red-500, 
+  "600": $clr-red-600, 
+  "700": $clr-red-700, 
+  "800": $clr-red-800, 
+  "900": $clr-red-900, 
+  "A100": $clr-red-A100,
+  "A200": $clr-red-A200, 
+  "A400": $clr-red-A400, 
+  "A700": $clr-red-A700,
+);
 
 // Pink
 $clr-pink:                             nth($list-pink, 6);
@@ -151,9 +165,23 @@ $clr-pink-A200:                        nth($list-pink, 12);
 $clr-pink-A400:                        nth($list-pink, 13);
 $clr-pink-A700:                        nth($list-pink, 14);
 
-$clr-pink-list:   $clr-pink, $clr-pink-50, $clr-pink-100, $clr-pink-200, $clr-pink-300,
-                  $clr-pink-400, $clr-pink-500, $clr-pink-600, $clr-pink-700, $clr-pink-800, 
-                  $clr-pink-900, $clr-pink-A100, $clr-pink-A200, $clr-pink-A400, $clr-pink-A700;
+$clr-pink-list: (
+  "base": $clr-pink,
+  "50": $clr-pink-50, 
+  "100": $clr-pink-100, 
+  "200": $clr-pink-200, 
+  "300": $clr-pink-300,
+  "400": $clr-pink-400, 
+  "500": $clr-pink-500, 
+  "600": $clr-pink-600, 
+  "700": $clr-pink-700, 
+  "800": $clr-pink-800, 
+  "900": $clr-pink-900, 
+  "A100": $clr-pink-A100,
+  "A200": $clr-pink-A200, 
+  "A400": $clr-pink-A400, 
+  "A700": $clr-pink-A700,
+);
 
 // Purple
 $clr-purple:                           nth($list-purple, 6);
@@ -173,9 +201,23 @@ $clr-purple-A200:                      nth($list-purple, 12);
 $clr-purple-A400:                      nth($list-purple, 13);
 $clr-purple-A700:                      nth($list-purple, 14);
 
-$clr-purple-list:   $clr-purple, $clr-purple-50, $clr-purple-100, $clr-purple-200, $clr-purple-300,
-                    $clr-purple-400, $clr-purple-500, $clr-purple-600, $clr-purple-700, $clr-purple-800, 
-                    $clr-purple-900, $clr-purple-A100, $clr-purple-A200, $clr-purple-A400, $clr-purple-A700;
+$clr-purple-list: (
+  "base": $clr-purple,
+  "50": $clr-purple-50, 
+  "100": $clr-purple-100, 
+  "200": $clr-purple-200, 
+  "300": $clr-purple-300,
+  "400": $clr-purple-400, 
+  "500": $clr-purple-500, 
+  "600": $clr-purple-600, 
+  "700": $clr-purple-700, 
+  "800": $clr-purple-800, 
+  "900": $clr-purple-900, 
+  "A100": $clr-purple-A100,
+  "A200": $clr-purple-A200, 
+  "A400": $clr-purple-A400, 
+  "A700": $clr-purple-A700,
+);
 
 // Deep Purple
 $clr-deep-purple:                      nth($list-deep-purple, 6);
@@ -195,9 +237,23 @@ $clr-deep-purple-A200:                 nth($list-deep-purple, 12);
 $clr-deep-purple-A400:                 nth($list-deep-purple, 13);
 $clr-deep-purple-A700:                 nth($list-deep-purple, 14);
 
-$clr-deep-purple-list:   $clr-deep-purple, $clr-deep-purple-50, $clr-deep-purple-100, $clr-deep-purple-200, $clr-deep-purple-300,
-                         $clr-deep-purple-400, $clr-deep-purple-500, $clr-deep-purple-600, $clr-deep-purple-700, $clr-deep-purple-800, 
-                         $clr-deep-purple-900, $clr-deep-purple-A100, $clr-deep-purple-A200, $clr-deep-purple-A400, $clr-deep-purple-A700;
+$clr-deep-purple-list: (
+  "base": $clr-deep-purple,
+  "50": $clr-deep-purple-50, 
+  "100": $clr-deep-purple-100, 
+  "200": $clr-deep-purple-200, 
+  "300": $clr-deep-purple-300,
+  "400": $clr-deep-purple-400, 
+  "500": $clr-deep-purple-500, 
+  "600": $clr-deep-purple-600, 
+  "700": $clr-deep-purple-700, 
+  "800": $clr-deep-purple-800, 
+  "900": $clr-deep-purple-900, 
+  "A100": $clr-deep-purple-A100,
+  "A200": $clr-deep-purple-A200, 
+  "A400": $clr-deep-purple-A400, 
+  "A700": $clr-deep-purple-A700,
+);
 
 // Indigo
 $clr-indigo:                           nth($list-indigo, 6);
@@ -217,9 +273,23 @@ $clr-indigo-A200:                      nth($list-indigo, 12);
 $clr-indigo-A400:                      nth($list-indigo, 13);
 $clr-indigo-A700:                      nth($list-indigo, 14);
 
-$clr-indigo-list:   $clr-indigo, $clr-indigo-50, $clr-indigo-100, $clr-indigo-200, $clr-indigo-300,
-                    $clr-indigo-400, $clr-indigo-500, $clr-indigo-600, $clr-indigo-700, $clr-indigo-800, 
-                    $clr-indigo-900, $clr-indigo-A100, $clr-indigo-A200, $clr-indigo-A400, $clr-indigo-A700;
+$clr-indigo-list: (
+  "base": $clr-indigo,
+  "50": $clr-indigo-50, 
+  "100": $clr-indigo-100, 
+  "200": $clr-indigo-200, 
+  "300": $clr-indigo-300,
+  "400": $clr-indigo-400, 
+  "500": $clr-indigo-500, 
+  "600": $clr-indigo-600, 
+  "700": $clr-indigo-700, 
+  "800": $clr-indigo-800, 
+  "900": $clr-indigo-900, 
+  "A100": $clr-indigo-A100,
+  "A200": $clr-indigo-A200, 
+  "A400": $clr-indigo-A400, 
+  "A700": $clr-indigo-A700,
+);
 
 // Blue
 $clr-blue:                             nth($list-blue, 6);
@@ -239,9 +309,23 @@ $clr-blue-A200:                        nth($list-blue, 12);
 $clr-blue-A400:                        nth($list-blue, 13);
 $clr-blue-A700:                        nth($list-blue, 14);
 
-$clr-blue-list:   $clr-blue, $clr-blue-50, $clr-blue-100, $clr-blue-200, $clr-blue-300,
-                  $clr-blue-400, $clr-blue-500, $clr-blue-600, $clr-blue-700, $clr-blue-800, 
-                  $clr-blue-900, $clr-blue-A100, $clr-blue-A200, $clr-blue-A400, $clr-blue-A700;
+$clr-blue-list: (
+  "base": $clr-blue,
+  "50": $clr-blue-50, 
+  "100": $clr-blue-100, 
+  "200": $clr-blue-200, 
+  "300": $clr-blue-300,
+  "400": $clr-blue-400, 
+  "500": $clr-blue-500, 
+  "600": $clr-blue-600, 
+  "700": $clr-blue-700, 
+  "800": $clr-blue-800, 
+  "900": $clr-blue-900, 
+  "A100": $clr-blue-A100,
+  "A200": $clr-blue-A200, 
+  "A400": $clr-blue-A400, 
+  "A700": $clr-blue-A700,
+);
 
 // Light Blue
 $clr-light-blue:                       nth($list-light-blue, 6);
@@ -261,9 +345,23 @@ $clr-light-blue-A200:                  nth($list-light-blue, 12);
 $clr-light-blue-A400:                  nth($list-light-blue, 13);
 $clr-light-blue-A700:                  nth($list-light-blue, 14);
 
-$clr-light-blue-list:   $clr-light-blue, $clr-light-blue-50, $clr-light-blue-100, $clr-light-blue-200, $clr-light-blue-300,
-                       $clr-light-blue-400, $clr-light-blue-500, $clr-light-blue-600, $clr-light-blue-700, $clr-light-blue-800, 
-                       $clr-light-blue-900;
+$clr-light-blue-list: (
+  "base": $clr-light-blue,
+  "50": $clr-light-blue-50, 
+  "100": $clr-light-blue-100, 
+  "200": $clr-light-blue-200, 
+  "300": $clr-light-blue-300,
+  "400": $clr-light-blue-400, 
+  "500": $clr-light-blue-500, 
+  "600": $clr-light-blue-600, 
+  "700": $clr-light-blue-700, 
+  "800": $clr-light-blue-800, 
+  "900": $clr-light-blue-900, 
+  "A100": $clr-light-blue-A100,
+  "A200": $clr-light-blue-A200, 
+  "A400": $clr-light-blue-A400, 
+  "A700": $clr-light-blue-A700,
+);
 
 // Cyan
 $clr-cyan:                             nth($list-cyan, 6);
@@ -283,9 +381,23 @@ $clr-cyan-A200:                        nth($list-cyan, 12);
 $clr-cyan-A400:                        nth($list-cyan, 13);
 $clr-cyan-A700:                        nth($list-cyan, 14);
 
-$clr-cyan-list:   $clr-cyan, $clr-cyan-50, $clr-cyan-100, $clr-cyan-200, $clr-cyan-300,
-                  $clr-cyan-400, $clr-cyan-500, $clr-cyan-600, $clr-cyan-700, $clr-cyan-800, 
-                  $clr-cyan-900, $clr-cyan-A100, $clr-cyan-A200, $clr-cyan-A400, $clr-cyan-A700;
+$clr-cyan-list: (
+  "base": $clr-cyan,
+  "50": $clr-cyan-50, 
+  "100": $clr-cyan-100, 
+  "200": $clr-cyan-200, 
+  "300": $clr-cyan-300,
+  "400": $clr-cyan-400, 
+  "500": $clr-cyan-500, 
+  "600": $clr-cyan-600, 
+  "700": $clr-cyan-700, 
+  "800": $clr-cyan-800, 
+  "900": $clr-cyan-900, 
+  "A100": $clr-cyan-A100,
+  "A200": $clr-cyan-A200, 
+  "A400": $clr-cyan-A400, 
+  "A700": $clr-cyan-A700,
+);
 
 // Teal
 $clr-teal:                             nth($list-teal, 6);
@@ -305,9 +417,23 @@ $clr-teal-A200:                        nth($list-teal, 12);
 $clr-teal-A400:                        nth($list-teal, 13);
 $clr-teal-A700:                        nth($list-teal, 14);
 
-$clr-teal-list:   $clr-teal, $clr-teal-50, $clr-teal-100, $clr-teal-200, $clr-teal-300,
-                  $clr-teal-400, $clr-teal-500, $clr-teal-600, $clr-teal-700, $clr-teal-800, 
-                  $clr-teal-900, $clr-teal-A100, $clr-teal-A200, $clr-teal-A400, $clr-teal-A700;
+$clr-teal-list: (
+  "base": $clr-teal,
+  "50": $clr-teal-50, 
+  "100": $clr-teal-100, 
+  "200": $clr-teal-200, 
+  "300": $clr-teal-300,
+  "400": $clr-teal-400, 
+  "500": $clr-teal-500, 
+  "600": $clr-teal-600, 
+  "700": $clr-teal-700, 
+  "800": $clr-teal-800, 
+  "900": $clr-teal-900, 
+  "A100": $clr-teal-A100,
+  "A200": $clr-teal-A200, 
+  "A400": $clr-teal-A400, 
+  "A700": $clr-teal-A700,
+);
 
 // Green
 $clr-green:                            nth($list-green, 6);
@@ -327,9 +453,23 @@ $clr-green-A200:                       nth($list-green, 12);
 $clr-green-A400:                       nth($list-green, 13);
 $clr-green-A700:                       nth($list-green, 14);
 
-$clr-green-list:   $clr-green, $clr-green-50, $clr-green-100, $clr-green-200, $clr-green-300,
-                   $clr-green-400, $clr-green-500, $clr-green-600, $clr-green-700, $clr-green-800, 
-                   $clr-green-900, $clr-green-A100, $clr-green-A200, $clr-green-A400, $clr-green-A700;
+$clr-green-list: (
+  "base": $clr-green,
+  "50": $clr-green-50, 
+  "100": $clr-green-100, 
+  "200": $clr-green-200, 
+  "300": $clr-green-300,
+  "400": $clr-green-400, 
+  "500": $clr-green-500, 
+  "600": $clr-green-600, 
+  "700": $clr-green-700, 
+  "800": $clr-green-800, 
+  "900": $clr-green-900, 
+  "A100": $clr-green-A100,
+  "A200": $clr-green-A200, 
+  "A400": $clr-green-A400, 
+  "A700": $clr-green-A700,
+);
 
 // Light Green
 $clr-light-green:                      nth($list-light-green, 6);
@@ -349,9 +489,23 @@ $clr-light-green-A200:                 nth($list-light-green, 12);
 $clr-light-green-A400:                 nth($list-light-green, 13);
 $clr-light-green-A700:                 nth($list-light-green, 14);
 
-$clr-light-green-list:   $clr-light-green, $clr-light-green-50, $clr-light-green-100, $clr-light-green-200, $clr-light-green-300,
-                        $clr-light-green-400, $clr-light-green-500, $clr-light-green-600, $clr-light-green-700, $clr-light-green-800, 
-                        $clr-light-green-900;
+$clr-light-green-list: (
+  "base": $clr-light-green,
+  "50": $clr-light-green-50, 
+  "100": $clr-light-green-100, 
+  "200": $clr-light-green-200, 
+  "300": $clr-light-green-300,
+  "400": $clr-light-green-400, 
+  "500": $clr-light-green-500, 
+  "600": $clr-light-green-600, 
+  "700": $clr-light-green-700, 
+  "800": $clr-light-green-800, 
+  "900": $clr-light-green-900, 
+  "A100": $clr-light-green-A100,
+  "A200": $clr-light-green-A200, 
+  "A400": $clr-light-green-A400, 
+  "A700": $clr-light-green-A700,
+);
 
 // Lime
 $clr-lime:                             nth($list-lime, 6);
@@ -371,9 +525,23 @@ $clr-lime-A200:                        nth($list-lime, 12);
 $clr-lime-A400:                        nth($list-lime, 13);
 $clr-lime-A700:                        nth($list-lime, 14);
 
-$clr-lime-list:   $clr-lime, $clr-lime-50, $clr-lime-100, $clr-lime-200, $clr-lime-300,
-                   $clr-lime-400, $clr-lime-500, $clr-lime-600, $clr-lime-700, $clr-lime-800, 
-                   $clr-lime-900, $clr-lime-A100, $clr-lime-A200, $clr-lime-A400, $clr-lime-A700;
+$clr-lime-list: (
+  "base": $clr-lime,
+  "50": $clr-lime-50, 
+  "100": $clr-lime-100, 
+  "200": $clr-lime-200, 
+  "300": $clr-lime-300,
+  "400": $clr-lime-400, 
+  "500": $clr-lime-500, 
+  "600": $clr-lime-600, 
+  "700": $clr-lime-700, 
+  "800": $clr-lime-800, 
+  "900": $clr-lime-900, 
+  "A100": $clr-lime-A100,
+  "A200": $clr-lime-A200, 
+  "A400": $clr-lime-A400, 
+  "A700": $clr-lime-A700,
+);
 
 //Yellow
 $clr-yellow:                           nth($list-yellow, 6);
@@ -393,9 +561,23 @@ $clr-yellow-A200:                      nth($list-yellow, 12);
 $clr-yellow-A400:                      nth($list-yellow, 13);
 $clr-yellow-A700:                      nth($list-yellow, 14);
 
-$clr-yellow-list:   $clr-yellow, $clr-yellow-50, $clr-yellow-100, $clr-yellow-200, $clr-yellow-300,
-                    $clr-yellow-400, $clr-yellow-500, $clr-yellow-600, $clr-yellow-700, $clr-yellow-800, 
-                    $clr-yellow-900, $clr-yellow-A100, $clr-yellow-A200, $clr-yellow-A400, $clr-yellow-A700;
+$clr-yellow-list: (
+  "base": $clr-yellow,
+  "50": $clr-yellow-50, 
+  "100": $clr-yellow-100, 
+  "200": $clr-yellow-200, 
+  "300": $clr-yellow-300,
+  "400": $clr-yellow-400, 
+  "500": $clr-yellow-500, 
+  "600": $clr-yellow-600, 
+  "700": $clr-yellow-700, 
+  "800": $clr-yellow-800, 
+  "900": $clr-yellow-900, 
+  "A100": $clr-yellow-A100,
+  "A200": $clr-yellow-A200, 
+  "A400": $clr-yellow-A400, 
+  "A700": $clr-yellow-A700,
+);
 
 // Amber
 $clr-amber:                            nth($list-amber, 6);
@@ -415,9 +597,23 @@ $clr-amber-A200:                       nth($list-amber, 12);
 $clr-amber-A400:                       nth($list-amber, 13);
 $clr-amber-A700:                       nth($list-amber, 14);
 
-$clr-amber-list:   $clr-amber, $clr-amber-50, $clr-amber-100, $clr-amber-200, $clr-amber-300,
-                   $clr-amber-400, $clr-amber-500, $clr-amber-600, $clr-amber-700, $clr-amber-800, 
-                   $clr-amber-900, $clr-amber-A100, $clr-amber-A200, $clr-amber-A400, $clr-amber-A700;
+$clr-amber-list: (
+  "base": $clr-amber,
+  "50": $clr-amber-50, 
+  "100": $clr-amber-100, 
+  "200": $clr-amber-200, 
+  "300": $clr-amber-300,
+  "400": $clr-amber-400, 
+  "500": $clr-amber-500, 
+  "600": $clr-amber-600, 
+  "700": $clr-amber-700, 
+  "800": $clr-amber-800, 
+  "900": $clr-amber-900, 
+  "A100": $clr-amber-A100,
+  "A200": $clr-amber-A200, 
+  "A400": $clr-amber-A400, 
+  "A700": $clr-amber-A700,
+);
 
 // Orange
 $clr-orange:                           nth($list-orange, 6);
@@ -437,9 +633,23 @@ $clr-orange-A200:                      nth($list-orange, 12);
 $clr-orange-A400:                      nth($list-orange, 13);
 $clr-orange-A700:                      nth($list-orange, 14);
 
-$clr-orange-list:   $clr-orange, $clr-orange-50, $clr-orange-100, $clr-orange-200, $clr-orange-300,
-                    $clr-orange-400, $clr-orange-500, $clr-orange-600, $clr-orange-700, $clr-orange-800, 
-                    $clr-orange-900, $clr-orange-A100, $clr-orange-A200, $clr-orange-A400, $clr-orange-A700;
+$clr-orange-list: (
+  "base": $clr-orange,
+  "50": $clr-orange-50, 
+  "100": $clr-orange-100, 
+  "200": $clr-orange-200, 
+  "300": $clr-orange-300,
+  "400": $clr-orange-400, 
+  "500": $clr-orange-500, 
+  "600": $clr-orange-600, 
+  "700": $clr-orange-700, 
+  "800": $clr-orange-800, 
+  "900": $clr-orange-900, 
+  "A100": $clr-orange-A100,
+  "A200": $clr-orange-A200, 
+  "A400": $clr-orange-A400, 
+  "A700": $clr-orange-A700,
+);
 
 // Deep Orange
 $clr-deep-orange:                      nth($list-deep-orange, 6);
@@ -459,9 +669,23 @@ $clr-deep-orange-A200:                 nth($list-deep-orange, 12);
 $clr-deep-orange-A400:                 nth($list-deep-orange, 13);
 $clr-deep-orange-A700:                 nth($list-deep-orange, 14);
 
-$clr-deep-orange-list:   $clr-deep-orange, $clr-deep-orange-50, $clr-deep-orange-100, $clr-deep-orange-200, $clr-deep-orange-300,
-                         $clr-deep-orange-400, $clr-deep-orange-500, $clr-deep-orange-600, $clr-deep-orange-700, $clr-deep-orange-800, 
-                         $clr-deep-orange-900, $clr-deep-orange-A100, $clr-deep-orange-A200, $clr-deep-orange-A400, $clr-deep-orange-A700;
+$clr-deep-orange-list: (
+  "base": $clr-deep-orange,
+  "50": $clr-deep-orange-50, 
+  "100": $clr-deep-orange-100, 
+  "200": $clr-deep-orange-200, 
+  "300": $clr-deep-orange-300,
+  "400": $clr-deep-orange-400, 
+  "500": $clr-deep-orange-500, 
+  "600": $clr-deep-orange-600, 
+  "700": $clr-deep-orange-700, 
+  "800": $clr-deep-orange-800, 
+  "900": $clr-deep-orange-900, 
+  "A100": $clr-deep-orange-A100,
+  "A200": $clr-deep-orange-A200, 
+  "A400": $clr-deep-orange-A400, 
+  "A700": $clr-deep-orange-A700,
+);
 
 // Brown
 $clr-brown:                            nth($list-brown, 6);
@@ -477,9 +701,19 @@ $clr-brown-700:                        nth($list-brown, 8);
 $clr-brown-800:                        nth($list-brown, 9);
 $clr-brown-900:                        nth($list-brown, 10);
 
-$clr-brown-list:   $clr-brown, $clr-brown-50, $clr-brown-100, $clr-brown-200, $clr-brown-300,
-                   $clr-brown-400, $clr-brown-500, $clr-brown-600, $clr-brown-700, $clr-brown-800, 
-                   $clr-brown-900;
+$clr-brown-list: (
+  "base": $clr-brown,
+  "50": $clr-brown-50, 
+  "100": $clr-brown-100, 
+  "200": $clr-brown-200, 
+  "300": $clr-brown-300,
+  "400": $clr-brown-400, 
+  "500": $clr-brown-500, 
+  "600": $clr-brown-600, 
+  "700": $clr-brown-700, 
+  "800": $clr-brown-800, 
+  "900": $clr-brown-900, 
+);
 
 // Grey
 $clr-grey:                             nth($list-grey, 6);
@@ -495,9 +729,19 @@ $clr-grey-700:                         nth($list-grey, 8);
 $clr-grey-800:                         nth($list-grey, 9);
 $clr-grey-900:                         nth($list-grey, 10);
 
-$clr-grey-list:   $clr-grey, $clr-grey-50, $clr-grey-100, $clr-grey-200, $clr-grey-300,
-                  $clr-grey-400, $clr-grey-500, $clr-grey-600, $clr-grey-700, $clr-grey-800, 
-                  $clr-grey-900;
+$clr-grey-list: (
+  "base": $clr-grey,
+  "50": $clr-grey-50, 
+  "100": $clr-grey-100, 
+  "200": $clr-grey-200, 
+  "300": $clr-grey-300,
+  "400": $clr-grey-400, 
+  "500": $clr-grey-500, 
+  "600": $clr-grey-600, 
+  "700": $clr-grey-700, 
+  "800": $clr-grey-800, 
+  "900": $clr-grey-900, 
+);
 
 // Blue Grey
 $clr-blue-grey:                        nth($list-blue-grey, 6);
@@ -513,9 +757,19 @@ $clr-blue-grey-700:                    nth($list-blue-grey, 8);
 $clr-blue-grey-800:                    nth($list-blue-grey, 9);
 $clr-blue-grey-900:                    nth($list-blue-grey, 10);
 
-$clr-blue-grey-list:   $clr-blue-grey, $clr-blue-grey-50, $clr-blue-grey-100, $clr-blue-grey-200, $clr-blue-grey-300,
-                       $clr-blue-grey-400, $clr-blue-grey-500, $clr-blue-grey-600, $clr-blue-grey-700, $clr-blue-grey-800, 
-                       $clr-blue-grey-900;
+$clr-blue-grey-list: (
+  "base": $clr-blue-grey,
+  "50": $clr-blue-grey-50, 
+  "100": $clr-blue-grey-100, 
+  "200": $clr-blue-grey-200, 
+  "300": $clr-blue-grey-300,
+  "400": $clr-blue-grey-400, 
+  "500": $clr-blue-grey-500, 
+  "600": $clr-blue-grey-600, 
+  "700": $clr-blue-grey-700, 
+  "800": $clr-blue-grey-800, 
+  "900": $clr-blue-grey-900, 
+);
 
 // UI Color Application
 // --------------------------------------------------------------------------
