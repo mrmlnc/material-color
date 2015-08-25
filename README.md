@@ -111,7 +111,7 @@ Note: This is currently only working in SCSS.
 }
 
 //If you wanted to do all the colors
-@each $clrl, $varl in $md-list-all {
+@each $clrl, $varl in $clr-list-all {
   @each $clr, $var in $varl {
     @if $clr == "base"{
       .#{$clrl} {
