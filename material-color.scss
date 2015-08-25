@@ -771,6 +771,29 @@ $clr-blue-grey-list: (
   "900": $clr-blue-grey-900, 
 );
 
+// List for All Colors for looping
+$clr-list-all: (
+  "red": $clr-red-list,
+  "pink": $clr-pink-list,
+  "purple": $clr-purple-list,
+  "deep-purple": $clr-deep-purple-list,
+  "indigo": $clr-indigo-list,
+  "blue": $clr-blue-list,
+  "light-blue": $clr-blue-list,
+  "cyan": $clr-cyan-list,
+  "teal": $clr-teal-list,
+  "green": $clr-green-list,
+  "light-green": $clr-light-green-list,
+  "lime": $clr-lime-list,
+  "yellow": $clr-yellow-list,
+  "amber": $clr-amber-list,
+  "orange": $clr-orange-list,
+  "deep-orange": $clr-deep-orange-list,
+  "brown": $clr-brown-list,
+  "grey": $clr-grey-list,
+  "grey-blue": $clr-grey-blue-list,
+  );
+
 // UI Color Application
 // --------------------------------------------------------------------------
 
