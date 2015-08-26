@@ -1,8 +1,8 @@
 {
   "name": "material-color",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "authors": [
-    "Denis Malinochkin <dmalinochkin@land.ru>"
+    "@mrmlnc (Denis Malinochkin)"
   ],
   "description": "The colour palette, based on Google's Material Design, for use in your project",
   "keywords": [
@@ -17,5 +17,8 @@
     "stylus"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/mrmlnc/material-color"
+  "homepage": "https://github.com/mrmlnc/material-color",
+  "ignore": [
+    "test"
+  ]
 }
