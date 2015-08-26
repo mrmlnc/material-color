@@ -92,3 +92,8 @@ There are provided lists of variables for looping through the colors. In order t
   material-color-class('red'); // another color or 'all'
   material-color-class('red', background-color); // another property or empty (default: color)
 ```
+
+## Thanks
+
+ - **Ali Amini** <aliamini.af@gmail.com> ([@AliAmini](https://github.com/AliAmini))
+ - **Chris Pawlukiewicz** <hi@paynoattn.com> ([@paynoattn](https://github.com/paynoattn))
