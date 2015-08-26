@@ -1,0 +1,36 @@
+@mixin material-color-class($name, $property: color) {
+  // If you want to do just one particular color
+  @if $name != "all" {
+    $list: map-get($clr-list-all, $name);
+    @each $clr, $var in $list {
+      @if $clr == "base" {
+        .#{$name} {
+          #{$property}: $var;
+        }
+      }
+      @else {
+        .#{$name}-#{$clr} {
+          #{$property}: $var;
+        }
+      }
+    }
+  }
+
+  //If you wanted to do all the colors
+  @else {
+    @each $clrl, $varl in $clr-list-all {
+      @each $clr, $var in $varl {
+        @if $clr == "base" {
+          .#{$clrl} {
+            #{$property}: $var;
+          }
+        }
+        @else {
+          .#{$clrl}-#{$clr} {
+            #{$property}: $var;
+          }
+        }
+      }
+    }
+  }
+}

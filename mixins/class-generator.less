@@ -1,0 +1,87 @@
+//
+// If you want to do just one particular color
+//
+
+.material-color-class(@name, @property: color) when not (@name = "all") {
+  // Getting the name of the current color and its values
+  @color-name: ~"clr-@{name}-list";
+  @color-list: @@color-name;
+  @list-length: length(@color-list);
+  @selector: e(@name);
+
+  // Creating selectors for current color if length of list more 1
+  .class(@color-list, @i: 1) when (@i <= @list-length) and (@list-length > 1) {
+    // List of all color accent
+    @accent-list: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, a100, a200, a400, a700;
+    @suffix: extract(@accent-list, @i);
+
+    // If this is the first iteration - create primary color without a suffix
+    & when (@i = 1) {
+      .@{selector} {
+        @{property}: extract(@color-list, 6);
+      }
+    }
+
+    .@{selector}-@{suffix} {
+      @{property}: extract(@color-list, @i);
+    }
+
+    // Next (i)
+    .class(@color-list, @i + 1);
+  }
+
+  // Creating selectors for current color if length of list is 1
+  .class(@color-list, @j: 1) when (@j <= @list-length) and (@list-length = 1) {
+    .@{name} {
+      @{property}: extract(@color-list, @j);
+    }
+  }
+
+  .class(@color-list);
+}
+
+
+//
+// If you wanted to do all the colors
+//
+
+.material-color-class(@list, @property: color, @i: 1) when (@list = "all") and (@i <= length(@clr-list-all)) {
+  // Getting the name of the current color and its values
+  @name: extract(@clr-list-all, @i);
+  @color-name: ~"clr-@{name}-list";
+  @color-list: @@color-name;
+  @list-length: length(@color-list);
+
+  // Creating selectors for current color if length of list more 1
+  .class(@color-list, @j: 1) when (@j <= @list-length) and (@list-length > 1) {
+    // List of all color accent
+    @accent-list: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, a100, a200, a400, a700;
+    @suffix: extract(@accent-list, @j);
+
+    // If this is the first iteration - create primary color without a suffix
+    & when (@j = 1) {
+      .@{name} {
+        @{property}: extract(@color-list, 6);
+      }
+    }
+
+    .@{name}-@{suffix} {
+      @{property}: extract(@color-list, @j);
+    }
+
+    // Next (j)
+    .class(@color-list, @j + 1);
+  }
+
+  // Creating selectors for current color if length of list is 1
+  .class(@color-list, @j: 1) when (@j <= @list-length) and (@list-length = 1) {
+    .@{name} {
+      @{property}: extract(@color-list, @j);
+    }
+  }
+
+  .class(@color-list);
+
+  // Next (i)
+  .material-color-class("all", @i + 1);
+}
