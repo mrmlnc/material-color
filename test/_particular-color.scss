@@ -1,0 +1,5 @@
+@import "../material-color";
+@import "../mixins/class-generator";
+
+@include material-color-class("green");
+@include material-color-class("green", background-color);

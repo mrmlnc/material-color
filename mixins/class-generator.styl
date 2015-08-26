@@ -1,0 +1,37 @@
+material-color-class(name, property = color) {
+  // If you want to do just one particular color
+  if name != 'all' {
+    list = lookup('clr-' + name + '-list');
+
+    for clr, var in list {
+      if clr == 'base' {
+        .{name} {
+          {property}: var;
+        }
+      }
+      else {
+        .{name}-{clr} {
+          {property}: var;
+        }
+      }
+    }
+  }
+
+  //If you wanted to do all the colors
+  else {
+    for clrl, varl in clr-list-all {
+      for clr, var in varl {
+        if clr == 'base' {
+          .{clrl} {
+            {property}: var;
+          }
+        }
+        else {
+          .{clrl}-{clr} {
+            {property}: var;
+          }
+        }
+      }
+    }
+  }
+}

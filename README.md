@@ -20,22 +20,9 @@ How to use
 
 Just import the file, whitch includes variables colors in your project.
 
-**Less:**
-
-````Less
+```Less
+  // Less, Scss, Stylus
   @import "lib/material-color";
-````
-
-**Sass:**
-
-````Sass
-  @import "lib/material-color"
-````
-
-**Stylus:**
-
-````Stylus
-  @import "lib/material-color"
 ````
 
 If you use Bower, the path would be:
@@ -46,10 +33,9 @@ If you use Bower, the path would be:
 
 **The build variable:**
 
-`(@|$)(prefix)-clr-(color)-(range)`
+`(@|$)clr-(color)-(range)`
 
   - **(@|$)** - Sign of the variable in the preprocessor.
-  - **(prefix)** - The prefix variable. Namespace of your variables and variables of the library. (With `material-color-prefixed` and without `material-color`)
   - **(color)** - Color.
   - **(range)** - 100, 300, 700, A100 and so on. The default value of 500.
 
@@ -59,11 +45,11 @@ If you use Bower, the path would be:
   @import "lib/material-color";
 
   .example-1 {
-    background-color: @md-clr-blue;
+    background-color: @clr-blue;
   }
 
   .example-2 {
-    background-color: @md-clr-green-700;
+    background-color: @clr-green-700;
   }
 ````
 
@@ -86,3 +72,28 @@ clr-ui-caption
 clr-ui-menu
 clr-ui-button
 ````
+
+**Mixin**
+
+There are provided lists of variables for looping through the colors. In order to use this functionality you must import file and call mixin(s):
+
+```
+  @import "mixins/class-generator";
+
+  // Less
+  .material-color-class("red"); // another color or "all"
+  .material-color-class("red", background-color); // another property or empty (default: color)
+
+  // Scss
+  @include material-color-class("red"); // another color or "all"
+  @include material-color-class("red", background-color); // another property or empty (default: color)
+
+  // Stylus
+  material-color-class('red'); // another color or 'all'
+  material-color-class('red', background-color); // another property or empty (default: color)
+```
+
+## Thanks
+
+ - **Ali Amini** &lt;aliamini.af@gmail.com&gt; ([@AliAmini](https://github.com/AliAmini))
+ - **Chris Pawlukiewicz** &lt;hi@paynoattn.com&gt; ([@paynoattn](https://github.com/paynoattn))

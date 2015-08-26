@@ -1,0 +1,21 @@
+@import "../material-color";
+
+.red {
+  color: $clr-red;
+  background-color: $clr-white;
+}
+
+.blue {
+  color: $clr-blue-400;
+  background-color: $clr-blue-a400;
+}
+
+.deep-orange {
+  color: $clr-deep-orange-a700;
+  background-color: $clr-green-50;
+}
+
+.grey {
+  color: $clr-grey-100;
+  background-color: $clr-black;
+}
