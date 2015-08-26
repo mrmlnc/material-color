@@ -95,5 +95,5 @@ There are provided lists of variables for looping through the colors. In order t
 
 ## Thanks
 
- - **Ali Amini** <aliamini.af@gmail.com> ([@AliAmini](https://github.com/AliAmini))
- - **Chris Pawlukiewicz** <hi@paynoattn.com> ([@paynoattn](https://github.com/paynoattn))
+ - **Ali Amini** &lt;aliamini.af@gmail.com&gt; ([@AliAmini](https://github.com/AliAmini))
+ - **Chris Pawlukiewicz** &lt;hi@paynoattn.com&gt; ([@paynoattn](https://github.com/paynoattn))
