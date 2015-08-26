@@ -73,7 +73,7 @@ clr-ui-menu
 clr-ui-button
 ````
 
-**Looping**
+**Mixin**
 
 There are provided lists of variables for looping through the colors. In order to use this functionality you must import file and call mixin(s):
 
