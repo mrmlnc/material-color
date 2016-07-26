@@ -28,6 +28,7 @@
     "material-color.styl"
   ],
   "ignore": [
-    "test"
+    "test",
+    "package.json"
   ]
 }
