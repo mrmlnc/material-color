@@ -22,7 +22,6 @@
     "stylus"
   ],
   "files": [
-    "**/*.{less,scss,styl}",
-    "bower.json"
+    "**/*.{less,scss,styl}"
   ]
 }
