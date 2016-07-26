@@ -21,7 +21,7 @@ Support for all popular css preprocessors:
 Just import the file, whitch includes variables colors in your project.
 
 ```less
-// Less, Scss, Stylus
+// Less, SCSS, Stylus
 @import "lib/material-color";
 ```
 
@@ -78,7 +78,7 @@ There are provided lists of variables for looping through the colors. In order t
 .material-color-class("red"); // another color or "all"
 .material-color-class("red", background-color); // another property or empty (default: color)
 
-// Scss
+// SCSS
 @include material-color-class("red"); // another color or "all"
 @include material-color-class("red", background-color); // another property or empty (default: color)
 
