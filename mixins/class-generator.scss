@@ -1,16 +1,30 @@
-@mixin material-color-class($name, $property: color) {
+@mixin material-color-class($name, $property: color, $prefix: "") {
   // If you want to do just one particular color
   @if $name != "all" {
     $list: map-get($clr-list-all, $name);
     @each $clr, $var in $list {
       @if $clr == "base" {
-        .#{$name} {
-          #{$property}: $var;
+        @if $prefix != "" {
+          .#{$prefix}-#{$name} {
+            #{$property}: $var;
+          }
+        }
+        @else {
+          .#{$name} {
+            #{$property}: $var;
+          }
         }
       }
       @else {
-        .#{$name}-#{$clr} {
-          #{$property}: $var;
+        @if $prefix != "" {
+          .#{$prefix}-#{$name}-#{$clr} {
+            #{$property}: $var;
+          }
+        }
+        @else {
+          .#{$name}-#{$clr} {
+            #{$property}: $var;
+          }
         }
       }
     }
@@ -21,13 +35,27 @@
     @each $clrl, $varl in $clr-list-all {
       @each $clr, $var in $varl {
         @if $clr == "base" {
-          .#{$clrl} {
-            #{$property}: $var;
+          @if $prefix != "" {
+            .#{$prefix}-#{$clrl} {
+              #{$property}: $var;
+            }
+          }
+          @else {
+            .#{$clrl} {
+              #{$property}: $var;
+            }
           }
         }
         @else {
-          .#{$clrl}-#{$clr} {
-            #{$property}: $var;
+          @if $prefix != "" {
+            .#{$prefix}-#{$clrl}-#{$clr} {
+              #{$property}: $var;
+            }
+          }
+          @else {
+            .#{$clrl}-#{$clr} {
+              #{$property}: $var;
+            }
           }
         }
       }

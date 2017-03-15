@@ -2,7 +2,7 @@
 // If you want to do just one particular color
 //
 
-.material-color-class(@name, @property: color) when not (@name = "all") {
+.material-color-class(@name, @property: color, @prefix: "") when not (@name = "all") {
   // Getting the name of the current color and its values
   @color-name: ~"clr-@{name}-list";
   @color-list: @@color-name;
@@ -17,13 +17,27 @@
 
     // If this is the first iteration - create primary color without a suffix
     & when (@i = 1) {
-      .@{selector} {
-        @{property}: extract(@color-list, 6);
+      when not (@prefix = "") {
+        .@{prefix}-@{selector} {
+          @{property}: extract(@color-list, 6);
+        }
+      }
+      when (@prefix = "") {
+        .@{selector} {
+          @{property}: extract(@color-list, 6);
+        }
       }
     }
 
-    .@{selector}-@{suffix} {
-      @{property}: extract(@color-list, @i);
+    when not (@prefix = "") {
+      .@{prefix}-@{selector}-@{suffix} {
+        @{property}: extract(@color-list, @i);
+      }
+    }
+    when (@prefix = "") {
+      .@{selector}-@{suffix} {
+        @{property}: extract(@color-list, @i);
+      }
     }
 
     // Next (i)
@@ -32,8 +46,15 @@
 
   // Creating selectors for current color if length of list is 1
   .class(@color-list, @j: 1) when (@j <= @list-length) and (@list-length = 1) {
-    .@{name} {
-      @{property}: extract(@color-list, @j);
+    when not (@prefix = "") {
+      .@{prefix}-@{name} {
+        @{property}: extract(@color-list, @j);
+      }
+    }
+    when (@prefix = "") {
+      .@{name} {
+        @{property}: extract(@color-list, @j);
+      }
     }
   }
 
@@ -60,13 +81,27 @@
 
     // If this is the first iteration - create primary color without a suffix
     & when (@j = 1) {
-      .@{name} {
-        @{property}: extract(@color-list, 6);
+      when not (@prefix = "") {
+        .@{prefix}-@{name} {
+          @{property}: extract(@color-list, 6);
+        }
+      }
+      when (@prefix = "") {
+        .@{name} {
+          @{property}: extract(@color-list, 6);
+        }
       }
     }
 
-    .@{name}-@{suffix} {
-      @{property}: extract(@color-list, @j);
+    when not (@prefix = "") {
+      .@{prefix}-@{name}-@{suffix} {
+        @{property}: extract(@color-list, @j);
+      }
+    }
+    when (@prefix = "") {
+      .@{name}-@{suffix} {
+        @{property}: extract(@color-list, @j);
+      }
     }
 
     // Next (j)
@@ -75,8 +110,15 @@
 
   // Creating selectors for current color if length of list is 1
   .class(@color-list, @j: 1) when (@j <= @list-length) and (@list-length = 1) {
-    .@{name} {
-      @{property}: extract(@color-list, @j);
+    when not (@prefix = "") {
+      .@{prefix}-@{name} {
+        @{property}: extract(@color-list, @j);
+      }
+    }
+    when (@prefix = "") {
+      .@{name} {
+        @{property}: extract(@color-list, @j);
+      }
     }
   }
 

@@ -3,3 +3,4 @@
 
 @include material-color-class("all");
 @include material-color-class("all", background-color);
+@include material-color-class("all", background-color, "bg");
